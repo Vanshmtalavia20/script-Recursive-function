@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIDEO PLAY PAUSE</title>
+</head>
+<body>
+   <video height="500px" width="500px" id="vid">
+    <source src="Mere Sawaal Ka (Shehzada) HD-(MastiNew).mp4" type="video/mp4">
+   </video>
+      <!-- <source src="Mere Sawaal Ka (Shehzada) HD-(MastiNew).mp4" type="video/mp4"> -->
+
+        <button onclick="play()" id="bo">Play/Pause</button>
+</body>
+<script>
+
+   video = document.getElementById('vid')
+    butn = document.getElementById('bo')
+
+   function play()
+   {
+       if(video.paused)
+       {
+         video.play();
+
+
+       }
+       else
+       {
+              video.pause();
+       }
+
+   }
+
+
+</script>
+</html>
